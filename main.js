@@ -1,7 +1,7 @@
 import { Game } from "./game.js";
 
-const GAME_WIDTH = 768;
-const GAME_HEIGHT = 768;
+const GAME_WIDTH = 512;
+const GAME_HEIGHT = 512;
 
 window.addEventListener("load", function () {
   const canvas = document.getElementById("canvas1");
