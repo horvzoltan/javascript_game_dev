@@ -6,4 +6,8 @@ export class Camera {
     this.x = 0;
     this.y = 0;
   }
+  move(speedX, speedY) {
+    this.x += speedX;
+    this.y += speedY;
+  }
 }

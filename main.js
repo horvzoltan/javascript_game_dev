@@ -10,5 +10,12 @@ window.addEventListener("load", function () {
   canvas.height = GAME_HEIGHT;
 
   const game = new Game(GAME_WIDTH, GAME_HEIGHT);
-  game.render(ctx);
+
+  function animate() {
+    game.update();
+    game.render(ctx);
+    requestAnimationFrame(animate);
+    console.log("animating");
+  }
+  requestAnimationFrame(animate);
 });
